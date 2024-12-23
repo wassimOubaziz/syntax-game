@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:wght@400;500;800&display=swap");
+
+:root {
+  --text: #091009;
+  --background: #f6faf7;
+  --background-container: white;
+  --primary: #091009;
+  --secondary: #a9d0c4;
+  --accent: #8abfb8;
+  
+  --background-text-box: #eaeaea;
+  --background-settings-overlay: rgba(0, 0, 0, 0.5);/* Semi-black background */
+  --background-settings: #fff;
+  
+  --background-text-block: #f4f4f4;
+
+  --button-try-again-text-color : white;
+  --button-try-again-color-hover: #54a858;
+
+  --background-reset-scores: #fa3333;
+  --text-reset-scores : #fff;
+  --hover-reset-scores: #f92020;
+
+  
+
+  --untyped-color: gray;
+  --correct-character-color: green;
+  --current-character-color: black;
+
+
+
+}
+
+[data-theme='dark'] {
+  --text: #cac4c7;
+  --background: rgb(44, 43, 43);
+  --background-container: rgb(10, 6, 20);
+  --primary: #f6faf7;
+  --secondary: #8abfb8;
+  --accent: #a9d0c4;
+
+  --button-try-again-text-color: black;
+
+  --background-settings-overlay: rgba(202, 183, 183, 0.5);
+
+  --background-settings: #0d1d2b;
+  --background-text-block: #1F1F1F;
+  --current-character-color: #C5C900;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: calc(1em + 0.5rem);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--text);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  user-select: none;
+}
+
+button {
+  display: inline-block;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}

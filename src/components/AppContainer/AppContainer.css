@@ -1,0 +1,148 @@
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  background-color: var(--background-secondary);
+  border-radius: 0.5rem;
+  margin-top: auto;
+}
+
+footer button {
+  color: var(--text);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+.made-by {
+  font-size: 0.9rem;
+  border-radius: 25px;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+  background-color: var(--background);
+  border: 1px solid var(--border);
+}
+
+.made-by:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.made-by-svg {
+  display: inline;
+  vertical-align: middle;
+  margin-right: 0.4rem;
+}
+
+/* Container taking full screen */
+.window-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--background);
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 1rem;
+  gap: 2rem;
+  overflow-x: hidden;
+}
+
+/* Game wrapper with fixed width */
+.game-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 1200px;
+  width: 100%;
+  gap: 2rem;
+  padding: 1rem;
+  background-color: var(--background-secondary);
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* The text box container inside the game wrapper */
+.text-box-container {
+  width: 100%;
+  max-width: 600px; /* Fixed width for the text box */
+  min-height: 200px;
+  padding: 20px;
+  background-color: var(--background-text-box);
+  border-radius: 8px;
+  overflow-wrap: break-word; /* Ensures long words or text will wrap */
+  word-wrap: break-word; /* For compatibility with older browsers */
+  box-sizing: border-box;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 1200px) {
+  .game-wrapper {
+    max-width: 700px;
+    min-height: 450px;
+  }
+}
+
+@media (max-width: 992px) {
+  .game-wrapper {
+    max-width: 600px;
+    min-height: 400px;
+  }
+
+  .text-box-container {
+    max-width: 500px; /* Adjusting fixed width for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .game-wrapper {
+    max-width: 500px;
+    min-height: 350px;
+  }
+
+  .text-box-container {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 576px) {
+  .game-wrapper {
+    max-width: 400px;
+    min-height: 300px;
+  }
+
+  .text-box-container {
+    max-width: 350px;
+  }
+}
+
+/* Further adjustments for small mobile screens */
+@media (max-width: 400px) {
+  .game-wrapper {
+    max-width: 350px;
+    min-height: 280px;
+  }
+
+  .text-box-container {
+    max-width: 300px;
+  }
+}
