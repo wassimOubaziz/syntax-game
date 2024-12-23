@@ -24,7 +24,7 @@ const TimeoutPopup = ({ show, onTryAgain, onClose }) => {
           </div>
 
           <div className="timeout-actions">
-            <button className="try-again-button" onClick={onTryAgain}>
+            <button className="try-again-button" onClick={onTryAgain} style={{ backgroundColor: 'var(--primary-color)' }}>
               Try Again
             </button>
           </div>
